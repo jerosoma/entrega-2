@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" href="../images/72.jpg" type="image/x-icon">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+      
+      <header class="header"> 
+        
+        <img src="../images/retrato Rodo.jpg" id="logo">
+        
+  
+          <ul class="menu">
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="../pages/biography.html">Biografía</a></li>
+            <li><a href="../pages/ilustrations.html">Ilustraciones</a></li>
+            <li><a href="../pages/aerography.html">Aerografías</a></li>
+            <li><a href="../pages/interventions.html">Siluetazo</a></li>
+          </ul>
+    
+
+      </header>
+    
+
+    
+      <section id="form">
+        <h1>Contactanos</h1>
+
+        <form> 
+          <fieldset>
+          <legend>Ingresa tus datos</legend>
+
+            <!--Input para texto-->
+          <label for="nombre">Nombre y apellido</label>  
+          <input type="text" id="nombre" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" name="correo" id="correo" required>
+
+          <!--Input para número de teléfono-->
+          <label for="telefono">Número de teléfono</label>
+          <input type="tel" name="telefono" id="telefono" required>
+
+          <!--Input para dirección-->
+          <label for="direccion">Dirección</label>
+          <input type="text" name="direccion" id="direccion" required>
+
+
+          <!--Input para ingresar un número cualquiera-->
+          
+          <label for="codigo-postal">Código postal</label>
+          <input type="number" id="codigo-postal" name="codigo-postal" max="9999" min="1000">
+
+          <label for="edad">Edad</label>
+          <input type="number" name="edad" id="edad" min="18" required>
+
+          <!--Input de texto largo textarea-->
+          <label for="mensaje">Dejanos un mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="40" rows="15">
+          
+          </textarea>
+          <br>
+          <!--iNTRODUCCIÓN DE UN MENÚ DESPLEGABLE-->
+          <label>¿Qué fasceta de la producción de Aguerreberry te resulta más atractiva</label>  
+          <select name="selecciona" id="selecciona"> 
+             <option value="seleccione"disabled>Seleccione una opción</option>
+             <option value="ilustraciones">Sus ilustraciones</option>
+             <option value="aerografias">Sus aerografías</option>
+             <option value="intervenciones">Sus participación en el Siluetazo</option>
+             <option value="todas">Todas</option> 
+          </select>
+
+            <br>
+          <!--Introducción de controles de selección-->
+            <!--Radio para una opción-->
+
+            <label for="si">Quiero recibir novedades sobre la producción de Rodolfo Aguerreberry</label>
+            <input type="radio" name="opciones" id="si">
+
+            <label for="no">No quiero recibir novedades</label>
+            <input type="radio" name="opciones" id="no">
+            <br>
+            <input type="submit" value="Enviar formulario">
+
+          </fieldset>
+          
+        </form>
+
+      </section>
+   
+
+   
+      <footer>
+        <ul class="menu">
+          <li><a href="../pages/contact.html">Contacto</a></li>
+          <li><a href="../pages/biography.html">Biografía</a></li>
+          <li><a href="../pages/ilustrations.html">Ilustraciones</a></li>
+          <li><a href="../pages/aerography.html">Aerografías</a></li>
+          <li><a href="../pages/interventions.html">Siluetazo</a></li>
+        </ul> 
+      </footer>
+    
+    </body>
+</html>
