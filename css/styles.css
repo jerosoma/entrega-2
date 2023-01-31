@@ -16,20 +16,27 @@ li {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
  text-decoration-line: none;
 font-weight: bolder; color: black;
-list-style-type: none;}
+list-style-type: none;
+padding: 20px;}
 
 p {margin: 20px 16px 30px 16px; 
 }
 
 .img {width: 300px; height: 250px;}
 
-.menu {border: solid 4px rgb(56, 54, 54); border-radius: 5px;
-margin-left: 200px; margin-right: 100px;
+.menu {border: solid 4px rgb(56, 54, 54); 
+     border-radius: 5px;
+margin-left: 200px; 
+margin-right: 100px;
 background-color: rgb(203, 204, 165);
-margin-bottom: 80px ; margin-top: 50px;
+margin-bottom: 80px ; 
+margin-top: 50px;
 font-family: Verdana, Geneva, Tahoma, sans-serif; 
 text-align: center;
-text-decoration: none; padding: 26px;
+text-decoration: none; 
+padding: 26px;
+display: flex;
+ flex-direction: row;
 
 
 }
@@ -37,18 +44,18 @@ text-decoration: none; padding: 26px;
 iframe {margin: 20px;
      padding: 20px;
      text-align: center;
-      width: 600px; 
-      
+     width: 100%; 
+     height: 75%;   
 }
 
 .imgIndex { width: 75%;
      height: 100%;
 }
 
-#logo {width: 110px;
-height: 140 px; 
+#logo {width: 140px;
+height: 180 px; 
 margin: 20px;
- margin-left: 40px;
+margin-left: 40px; 
 
 }
 
@@ -91,8 +98,7 @@ h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;
      margin-top: 20px;
 }
 
-.menu li {display: inline-block;
-}
+
 
 
 .menu li:hover {color: rgb(248, 159, 51);
@@ -119,15 +125,8 @@ padding: 35px;
 .bio {display: flex; 
 }
 
-.siluetazo {display: flex;
-
-}
-
-#pSiluetazo {font-family: Verdana, Geneva, Tahoma, sans-serif;
-     text-align: justify; 
-     width: 700px;
-     font-weight: bold; 
-     background-color: darkgray;
+.siluetazo {display: grid; 
+     grid-template-columns: 2fr 2fr;
 }
 
 .img__cuad {height: 300px;
@@ -138,18 +137,52 @@ padding: 35px;
 
 .bio {display: flex; }
 
+footer {display: flex ; flex-direction: row;}
+
+.header {display: flex; flex-direction: row;}
 
 
+@media only screen and ( max-width: 500px) {
+     .menu { flex-direction: column; 
+          align-items: center;
+          justify-content: center;
 
-
-.footer {border: solid 4px rgb(56, 54, 54); 
-     border-radius: 5px;
-     margin-left: 200px; margin-right: 100px;
-     background-color: rgb(203, 204, 165);
-     margin-bottom: 80px ; margin-top: 50px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-     text-align: center;
-     text-decoration: none; padding: 26px;;
      }
 
-.header {display: flex; }
+     .header { flex-direction: column; 
+          align-items: center;
+     }
+
+     footer {flex-direction: column; 
+          align-items: center;
+     }
+
+     .articulo { display: flex;
+          flex-direction: column; 
+          align-items: center;
+      }
+
+     .bio { flex-direction: column; 
+          align-items: center;
+
+     }
+
+     .ilustracion { display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     .aerografia { display: flex;
+          flex-direction: column;
+          align-items: center;
+
+     }
+
+     .siluetazo {display: flex;
+          flex-direction: column;
+          align-items: center;
+
+     }
+
+     
+}    
+
