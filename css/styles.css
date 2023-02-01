@@ -4,11 +4,11 @@
 }
 
 body {background-image: url(../images/olla104.jpg); 
-background-size: auto; 
+      background-attachment: fixed; background-size: auto;
 line-height: 1.6; 
 letter-spacing: 5px;
 word-spacing: 30 px;
-overflow: scroll;
+
 background: linear-gradient(to bottom);
 }
 
@@ -55,7 +55,7 @@ iframe {margin: 20px;
 #logo {width: 140px;
 height: 180 px; 
 margin: 20px;
-margin-left: 4gi0px; 
+margin-left: 40px; align-items: center;
 
 }
 
@@ -69,11 +69,11 @@ a {text-decoration: none
 
 .pIndex {
      font-family: Verdana, Geneva, Tahoma, sans-serif; 
-     font-weight: bold; 
+     font-weight: lighter; 
      font-size: large;
      text-align: justify;
      margin: 20px;
-     padding: 20px; background-color: darkgrey;
+     padding: 20px; background-color: rgb(255, 251, 251);
 }
 
 h1 {font-family: Verdana, Geneva, Tahoma, sans-serif; 
@@ -151,6 +151,10 @@ footer {display: flex ; flex-direction: row;}
      border-radius: 1%;
 }
 
+.btn {font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: bold;
+}
+
 @media only screen and ( max-width: 500px) {
      .menu { flex-direction: column; 
           align-items: center;
@@ -159,11 +163,14 @@ footer {display: flex ; flex-direction: row;}
      }
 
      .header { flex-direction: column; 
-          align-items: center;
+          align-items: center; 
+          justify-content: center;
+
      }
 
      footer {flex-direction: column; 
-          align-items: center;
+          align-items: center; 
+          justify-items: center;
      }
 
      .articulo { display: flex;
@@ -191,5 +198,7 @@ footer {display: flex ; flex-direction: row;}
           align-items: center;
 
      }     
+     #logo { align-items: center;
 
+     }
 }
